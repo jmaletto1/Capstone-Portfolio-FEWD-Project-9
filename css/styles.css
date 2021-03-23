@@ -1,0 +1,135 @@
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+  margin: 0;
+}
+
+:root {
+  --primary-colour: rgb(174, 77, 174);
+  --secondary-colour: rgb(18, 97, 176);
+}
+
+p {
+  color: rgb(130, 127, 127);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Hero */
+
+.hero__container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(174, 77, 174, 0.65),
+      rgba(18, 97, 176, 0.8)
+    ),
+    url("../img/ja-hero-2.jpg");
+  background-size: cover;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  /* letter-spacing: 1px; */
+  text-shadow: 3px 3px 2px rgb(20 20 20 / 50%);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.hero__image,
+.hero__text {
+  max-width: 50%;
+}
+
+.hero__text {
+  margin: 5rem 8rem 0 auto;
+  text-align: right;
+}
+
+.hero__image img {
+  border-radius: 100%;
+  border: 4px solid white;
+  width: 250px;
+}
+
+/* Cards */
+
+.cards__container {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-top: 4rem;
+}
+
+.card {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#cards--header {
+  text-align: center;
+  background: rgb(140, 41, 245);
+  background: linear-gradient(
+    90deg,
+    rgba(140, 41, 245, 1) 0%,
+    rgba(154, 77, 174, 1) 95%
+  );
+  width: 300px;
+}
+
+.card--icon {
+  background: var(--primary-colour);
+  opacity: 0.5;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 2rem;
+  height: 100px;
+  width: 100px;
+}
+
+.card--icon i {
+  color: white;
+  padding-top: 0.5rem;
+}
+
+.card--h3 {
+  background: var(--primary-colour);
+  border-radius: 1px;
+  opacity: 0.5;
+  color: white;
+  letter-spacing: 1.5px;
+  margin: 2rem auto;
+  padding-top: 1rem;
+  height: 40px;
+  width: 200px;
+}
+
+.card--two {
+  background: var(--secondary-colour);
+}
+
+.card--three {
+  background: orange;
+}
+
+.card p {
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .cards__container {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 5rem;
+  }
+}
