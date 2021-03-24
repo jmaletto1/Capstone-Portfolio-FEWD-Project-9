@@ -242,3 +242,116 @@ h2 {
     margin: 0 5rem;
   }
 }
+
+/* Portfolio */
+
+.portfolio__container {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+/* Contact */
+
+.contact__container {
+  background: rgb(125, 32, 223);
+  background: linear-gradient(
+    90deg,
+    rgb(78, 11, 149) 0%,
+    rgba(154, 77, 174, 1) 100%
+  );
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact__container h4,
+.contact__container p {
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.contact__container h4 {
+  margin-bottom: 0;
+}
+
+.contact--header {
+  text-align: center;
+}
+
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+form input,
+form textarea {
+  background-color: #451e45;
+  border-radius: 4px;
+  border: 1px solid white;
+  color: white;
+  display: block;
+  /* margin-bottom: 1rem; */
+  width: 450px;
+  max-width: 80%;
+  margin: 0 auto 1rem;
+}
+
+form input {
+  height: 30px;
+}
+
+form textarea {
+  resize: none;
+}
+
+::placeholder,
+textarea::placeholder {
+  color: white;
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 1px;
+  opacity: 0.5;
+  padding-left: 3px;
+}
+
+form button {
+  background-color: #9d419d;
+  border-radius: 4px;
+  border: 1px solid white;
+  color: white;
+  font-size: 1.25rem;
+  margin: 0 auto 2rem;
+  height: 50px;
+  width: 120px;
+  transition: 0.4s ease-in;
+}
+
+form button:hover {
+  background-color: white;
+  color: #9d419d;
+}
+
+/* Social Footer */
+
+.social--icon {
+  fill: white;
+  height: 50px;
+  margin-right: 1.5rem;
+  margin-bottom: 2rem;
+  transition: 0.4s ease-in;
+}
+
+.social--icon:hover {
+  transform: scale(1.33);
+  fill: rgb(122, 185, 247);
+}
