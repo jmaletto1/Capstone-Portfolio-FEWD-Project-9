@@ -28,6 +28,8 @@ p {
       rgba(18, 97, 176, 0.8)
     ),
     url("../img/ja-hero-2-min.jpg");
+  clip-path: polygon(100% 0, 100% 100%, 29% 94%, 0 100%, 0 0);
+
   background-size: cover;
 }
 
@@ -78,7 +80,7 @@ h2 {
   border-radius: 3px;
   margin: 0 auto;
   margin-top: 2rem;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
   min-width: 300px;
   text-align: center;
   width: 70%;
@@ -96,7 +98,8 @@ h2 {
 
 #svg-arrow {
   height: 300px;
-  fill: rgb(161, 74, 161);
+  fill: rgb(154, 77, 174);
+  opacity: 0.6;
   margin-bottom: -5rem;
 }
 
