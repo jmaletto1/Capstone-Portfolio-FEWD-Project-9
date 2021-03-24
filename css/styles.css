@@ -27,7 +27,7 @@ p {
       rgba(174, 77, 174, 0.65),
       rgba(18, 97, 176, 0.8)
     ),
-    url("../img/ja-hero-2.jpg");
+    url("../img/ja-hero-2-min.jpg");
   background-size: cover;
 }
 
@@ -79,18 +79,35 @@ h2 {
 
 #cards--header {
   text-align: center;
-  background: rgb(140, 41, 245);
+  /* background: rgb(140, 41, 245);
   background: linear-gradient(
     90deg,
     rgba(140, 41, 245, 1) 0%,
     rgba(154, 77, 174, 1) 95%
+  ); */
+  background: rgb(125, 32, 223);
+  background: linear-gradient(
+    90deg,
+    rgb(78, 11, 149) 0%,
+    rgba(154, 77, 174, 1) 100%
   );
+  font-size: 1.75rem;
+  margin-top: 3rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.25rem;
+  text-shadow: 1px #000;
   width: 300px;
 }
 
 .card--icon {
-  background: var(--primary-colour);
-  opacity: 0.5;
+  /* background: var(--primary-colour); */
+  background: rgb(99, 77, 174);
+  background: linear-gradient(
+    90deg,
+    rgba(99, 77, 174, 1) 0%,
+    rgba(154, 77, 174, 0.9906337535014006) 69%
+  );
+  opacity: 0.75;
   border-radius: 50%;
   margin: 0 auto;
   padding: 2rem;
@@ -104,8 +121,14 @@ h2 {
 }
 
 .card--h3 {
-  background: var(--primary-colour);
-  border-radius: 1px;
+  /* background: var(--primary-colour); */
+  background: rgb(99, 77, 174);
+  background: linear-gradient(
+    90deg,
+    rgba(99, 77, 174, 1) 40%,
+    rgba(154, 77, 174, 0.9906337535014006) 69%
+  );
+  border-radius: 3px;
   opacity: 0.5;
   color: white;
   letter-spacing: 1.5px;
@@ -116,15 +139,31 @@ h2 {
 }
 
 .card--two {
-  background: var(--secondary-colour);
+  /* background: var(--secondary-colour); */
+  background: rgb(18, 97, 176);
+  background: linear-gradient(
+    90deg,
+    rgba(18, 97, 176, 1) 36%,
+    rgba(154, 77, 174, 1) 100%
+  );
 }
 
 .card--three {
-  background: orange;
+  /* background: orange; */
+  background: rgb(255, 165, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 165, 0, 1) 40%,
+    rgba(154, 77, 174, 0.9) 100%
+  );
 }
 
 .card p {
   padding: 0 2rem;
+}
+
+#icons {
+  margin-top: -0.65rem;
 }
 
 @media screen and (min-width: 768px) {
