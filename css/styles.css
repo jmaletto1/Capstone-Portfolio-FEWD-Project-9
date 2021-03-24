@@ -282,7 +282,12 @@ h4 {
   margin-bottom: 0;
 }
 
+.contact__container p {
+  margin-top: 0.75rem;
+}
+
 .contact--header {
+  max-width: 80%;
   text-align: center;
 }
 
@@ -298,7 +303,7 @@ form input,
 form textarea {
   background-color: #451e45;
   border-radius: 4px;
-  border: 1px solid white;
+  border: 2px solid black;
   color: white;
   display: block;
   /* margin-bottom: 1rem; */
@@ -308,7 +313,13 @@ form textarea {
 }
 
 form input {
-  height: 30px;
+  height: 50px;
+}
+
+form input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid white;
 }
 
 form textarea {
@@ -320,7 +331,7 @@ textarea::placeholder {
   color: white;
   font-family: "Cabin", sans-serif;
   letter-spacing: 1px;
-  opacity: 0.5;
+  opacity: 0.7;
   padding-left: 3px;
 }
 
@@ -339,6 +350,13 @@ form button {
 form button:hover {
   background-color: white;
   color: #9d419d;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  form input {
+    height: 30px;
+  }
 }
 
 /* Social Footer */
