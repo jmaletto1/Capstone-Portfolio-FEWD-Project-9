@@ -3,9 +3,10 @@ const data = [
     id: 0,
     title: "Web Design - Grand Technical",
     image: "/img/gt-1200.png",
-    description: "",
+    description:
+      "Grand Technical required a lightning-fast, mobile-first responsive website to showcase it's main services to a range of clients across the capital. I built this site from the ground up to be as visually appealing as possible. To ensure the site was loading as fast as possible, I used webp formats for all images, svg sprites, and minified the CSS and JS files. The site has since seen a huge increase in enquiries, sales and search engine rankings, mostly due to a greatly enhanced user experience!",
     live: "https://www.grandtechnical.co.uk/",
-    github: "",
+    github: "https://github.com/jmaletto1/grand-technical-web-app",
   },
   {
     id: 1,
@@ -21,7 +22,7 @@ const data = [
     title: "Web App Traffic Dashboard",
     image: "/img/webapp-1200.png",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consectetur impedit totam, perspiciatis et dolorum provident facere enim labore exercitationem aliquam, quisquam adipisci cupiditate molestias? Similique officia, facere voluptate provident, explicabo magni, dolorem illo minus quidem cupiditate sint qui harum autem! Ducimus sunt optio laborum et doloribus vitae ratione necessitatibus!",
+      "This WebApp Dashboard provides a range of traffic-related data to the end-user. The app uses chart.js to display bar, line and pie charts. The site is optimised to provide a top-end user experience across mobile, tablet and desktop platforms. As well as displaying traffic informaton via charts, the app also displays widgets that showcase alerts, the latest user registrations, and comments in a forum. Lastly, the app makes use of localstorage to store the user's preferences for their next visit. ",
     live: "http://www.johnnyausten.co.uk/portfolio/webapp-dashboard",
     github: "https://github.com/jmaletto1/WebApp-dashboard-fewd-project-7",
   },
