@@ -748,10 +748,19 @@ form button:hover {
     max-width: 45%;
     margin-right: 2rem;
     float: left;
+    transition: 0.5s ease-out;
+  }
+
+  .modal--project img:hover {
+    transform: scale(1.5);
   }
 
   .modal--project {
     padding: 0 1rem;
+  }
+
+  .modal__text {
+    min-height: 220px;
   }
 
   .modal--h2 {

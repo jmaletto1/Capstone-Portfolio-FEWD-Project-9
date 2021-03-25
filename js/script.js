@@ -66,7 +66,9 @@ const createModal = (id) => {
   const content = `
   <h2 class="modal--h2">${project.title}</h2>
   <img src=${project.image}>
-  <p>${project.description}</p>
+  <div class="modal__text">
+    <p>${project.description}</p>
+  </div>
   <div class="project__links">
     <a href="${project.live}" target="_blank" class="live--button bouncy">LIVE LINK</a>
     <a href=${project.github} target="_blank" class="live--button bouncy" style="animation-delay:0.07s">GITHUB REPO</a>
