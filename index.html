@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/aos.css" />
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -32,7 +33,8 @@
           <div class="modal--project"></div>
         </div>
       </div>
-      <div class="hero__container" data-aos="fade-down">
+
+      <div class="hero__container" data-aos="fade-down" data-aos-duration="700">
         <div class="mobile--hamburger">
           <span onclick="openNav()"><i class="fas fa-bars fa-2x"></i></span>
         </div>
@@ -47,32 +49,44 @@
           </div>
         </div>
       </div>
+
       <div class="main__container">
-        <div class="about__container" id="about">
+        <div
+          class="about__container"
+          id="about"
+          data-aos="zoom-in-up"
+          data-aos-duration="900"
+        >
           <div class="about__content">
-            <img src="img/jonny-headshot.png" alt="" />
+            <img src="img/jonny-headshot.jpg" alt="Johnny Austen's headshot" />
             <h2>I am a Full-Stack Web Developer</h2>
             <p>
-              In May 2020, I decided to really take my skills to the next level
-              by completing TeamTreehouse's Python Techdegree program. Whilst an
-              exciting an useful introduction to code, I felt I needed a little
-              more grounding to get involved in the kind of projects I really
-              wanted to. This led me to join the thoroughly comprehensive Full
-              Stack Javascript TechDegree, which I completed in January 2021. I
-              am now working on a freelance basis on a variety of projects.
+              Hi, I'm Johnny! I'm a Front-End/Full-stack developer with
+              experience working in front-end technologies (HTML5, CSS3, SASS,
+              JavaScript, React & More) alongside some back-end experience in
+              Node, Sequelize & Python. I currently manage the design,
+              development and SEO requirements for Booths By Lux, The Vocal Hub,
+              Grand Technical and Gig-Guide. I also contribute as a developer to
+              the LGBTQ Health Directory developed by Out Boulder Co, Colorado.
             </p>
+
             <p>
-              I am also a passionate runner and Obstacle Course Racer - mostly
-              completing in Spartan Races. My main achievement thus far has been
-              both qualifying for and competing at the Spartan European
-              Championships in Dolomiti, 2019. Whilst all races have been
-              postponed in 2020, I have been consistent with my training and
-              will be completing my first road marathon in April 2021. I'm
-              hoping for Sub 3, but let's see how it goes!
+              Based in London, I have spent the last 11 months growing my skills
+              across all areas of development with programs such as the
+              Treehouse Techdegree, CWM Mastery Classes and SEMRush's SEO
+              Academy. I have helped both Booths By Lux and Gig Guide achieve
+              first page rankings for primary keywords, and have worked on
+              complete re-designs for Grand Technical, The Vocal Hub & more.
+              This has led to a huge improvement in User experience, decrease in
+              bounce rate, and ultimately an increase in enquiries and sales.
+            </p>
+
+            <p>
+              I am currently interested in discussing opportunities related to
+              Front-End Web Development, Full-Stack & SEO.
             </p>
           </div>
           <div class="about__arrow__container">
-            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
             <svg
               id="svg-arrow"
               data-name="Layer 1"
@@ -86,12 +100,15 @@
             </svg>
           </div>
         </div>
+
         <h3 class="card--h3" id="cards--header">SKILLS</h3>
-        <div class="cards__container" data-aos="fade-right">
+        <div
+          class="cards__container"
+          data-aos="fade-right"
+          data-aos-duration="700"
+        >
           <div class="card">
             <div class="card--icon">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <svg
                 version="1.1"
                 id="svg-1"
@@ -135,18 +152,20 @@
             </div>
             <h3 class="card--h3">FRONT-END DEV</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-              maiores porro, facilis cumque soluta fugiat hic beatae sapiente
-              assumenda est molestiae explicabo amet aliquam dolores ducimus
-              atque odit possimus eveniet harum architecto. Necessitatibus qui
-              quidem provident itaque eius enim! Nesciunt.
+              My journey here began in 2016, installing, managing, modifying and
+              optimising Wordpress platforms for a number of local clients. I
+              then decided to take my skills to the next level by enrolling on
+              TeamTreehouse’s Front-End Techdegree. I’ve since built websites
+              for Grand Technical, Gig Guide, Booths By Lux, Dan’s Dogs (now
+              defunct) and The Vocal Hub. I build sites using a component-first,
+              bottom-up approach that fuses functionality with lightning-fast
+              load times. I regularly work with the BEM naming convention, SASS
+              and JavaScript frameworks like React.
             </p>
           </div>
+
           <div class="card">
             <div class="card--icon card--two">
-              <!-- <i class="fas fa-code fa-5x"></i> -->
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +177,7 @@
                 xml:space="preserve"
                 fill="white"
               >
-                <g id="Layer_1">
+                <g id="Layer_1.2">
                   <path
                     d="M1,14h3v2H1v14h3v2H1v14h3v4h42v-4h3V32h-3v-2h3V16h-3v-2h3V0H1V14z M44,48H6v-2h38V48z M47,34v10h-1H4H3V34h1h42H47z
            M44,32H6v-2h38V32z M47,18v10h-1H4H3V18h1h42H47z M44,16H6v-2h38V16z M3,2h44v10h-1H4H3V2z"
@@ -187,17 +206,19 @@
             </div>
             <h3 class="card--h3 card--two">BACK-END DEV</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-              maiores porro, facilis cumque soluta fugiat hic beatae sapiente
-              assumenda est molestiae explicabo amet aliquam dolores ducimus
-              atque odit possimus eveniet harum architecto. Necessitatibus qui
-              quidem provident itaque eius enim! Nesciunt.
+              As a full-stack developer, I have been lucky enough to work with a
+              variety of programming languages across different projects. I
+              first started out working with Python, before moving on to develop
+              a number of applications with Node on the TeamTreehouse Techdegree
+              course. My largest project yet has been a full-stack library
+              courses app, built with a React front-end and restful API - which
+              is powered by Express, Node & Sequelize. I have also contributed
+              to some small projects that are built usig MongoDB.
             </p>
           </div>
+
           <div class="card">
             <div class="card--icon card--three">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <svg
                 version="1.1"
                 id="Layer_1"
@@ -234,15 +255,24 @@
             </div>
             <h3 class="card--h3 card--three">SEO</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-              maiores porro, facilis cumque soluta fugiat hic beatae sapiente
-              assumenda est molestiae explicabo amet aliquam dolores ducimus
-              atque odit possimus eveniet harum architecto. Necessitatibus qui
-              quidem provident itaque eius enim! Nesciunt.
+              Since Q1 2020, I have managed the SEO campaigns for Booths By Lux
+              and Gig-Guide. Gig Guide currently sits in first spot for it’s
+              main keyword (Gig Guide - which is highly competitive) and on page
+              1 for a number of other competitive keywords. Booths By Lux - at
+              the time a brand new site, has now seen jumps from page 16 to page
+              1 for 4 of it’s primary keywords. Enquiries in 2021 alone have
+              risen by 600% versus 2020, whilst the user bounce rate and dwell
+              time have also both seen huge improvements.
             </p>
           </div>
         </div>
-        <div class="portfolio__container" id="portfolio">
+
+        <div
+          class="portfolio__container"
+          id="portfolio"
+          data-aos="fade-right"
+          data-aos-duration="700"
+        >
           <h4>PORTFOLIO</h4>
 
           <div class="portfolio__cards">
@@ -260,84 +290,92 @@
             </div>
           </div>
         </div>
-        <div class="contact__container" id="contact">
-          <div class="contact--header">
-            <h4>SAY HELLO</h4>
-            <p>Interested in working together? Drop me a line!</p>
-          </div>
-          <form action="https://formspree.io/f/meqvjzgq" method="POST">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Please enter your name"
-            />
-            <input
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder="Phone Number"
-            />
-            <input
-              type="email"
-              name="_replyto"
-              id="email"
-              placeholder="Email"
-            />
-            <textarea
-              name=""
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Your message here!"
-            ></textarea>
-            <button type="submit"><span>SUBMIT</span></button>
-          </form>
-          <div class="social__icons__container">
-            <p>SOCIALS:</p>
-            <a href="https://github.com/jmaletto1" target="_blank">
-              <svg
-                class="social--icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/johnny-austen-ab612959/"
-              target="_blank"
-            >
-              <svg
-                class="social--icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>LinkedIn icon</title>
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                />
-              </svg>
-            </a>
+
+        <div class="contact--background">
+          <div
+            class="contact__container"
+            id="contact"
+            data-aos="fade-down"
+            data-aos-duration="700"
+          >
+            <div class="contact--header">
+              <h4>SAY HELLO</h4>
+              <p>Interested in working together? Drop me a line!</p>
+              <div class="social__icons__container">
+                <a href="https://github.com/jmaletto1" target="_blank">
+                  <svg
+                    class="social--icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/johnny-austen-ab612959/"
+                  target="_blank"
+                >
+                  <svg
+                    class="social--icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>LinkedIn icon</title>
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <form action="https://formspree.io/f/xoqyapqj" method="POST">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Please enter your name"
+              />
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+              />
+              <input
+                type="email"
+                name="_replyto"
+                id="email"
+                placeholder="Email"
+              />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Your message here!"
+              ></textarea>
+              <button type="submit"><span>SUBMIT</span></button>
+            </form>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <script src="js/aos.js"></script>
     <script>
       AOS.init();
-    </script> -->
+    </script>
 
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/1fc6aa401a.js"
       crossorigin="anonymous"
-    ></script>
-
+    ></script> -->
+    <script src="js/font-awesome.js"></script>
     <script src="js/projects.js"></script>
     <script src="js/script.js"></script>
   </body>

@@ -65,13 +65,13 @@ const createModal = (id) => {
   modalContainer.style.display = "block";
   const content = `
   <h2 class="modal--h2">${project.title}</h2>
-  <img src=${project.image}>
+  <img src=${project.image} alt=${project.image_alt}>
   <div class="modal__text">
     <p>${project.description}</p>
   </div>
   <div class="project__links">
-    <a href="${project.live}" target="_blank" class="live--button bouncy">LIVE LINK</a>
-    <a href=${project.github} target="_blank" class="live--button bouncy" style="animation-delay:0.07s">GITHUB REPO</a>
+    <a href="${project.live}" target="_blank" class="live--button">LIVE LINK</a>
+    <a href=${project.github} target="_blank" class="live--button">GITHUB REPO</a>
   </div>
   `;
   modalContent.insertAdjacentHTML("beforeend", content);
