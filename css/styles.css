@@ -222,7 +222,6 @@ h1 {
 
 .about__content img {
   border-radius: 50%;
-  margin-right: 2rem;
   width: 220px;
 }
 
@@ -250,6 +249,7 @@ h2 {
   .about__content img {
     float: left;
     transition: 0.3s ease-out;
+    margin-right: 2rem;
   }
 
   .about__content img:hover {
@@ -736,11 +736,6 @@ form button:hover {
     margin-right: 2rem;
     float: left;
     transition: 0.5s ease-out;
-  }
-
-  .modal--project img:hover {
-    transform: scale(1.5);
-    opacity: 1;
   }
 
   .modal--project {

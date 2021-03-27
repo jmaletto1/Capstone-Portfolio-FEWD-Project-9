@@ -9,12 +9,17 @@ const modalXButton = document.querySelector(".modal--button");
 const modalContent = document.querySelector(".modal--project");
 const projectButtons = document.querySelectorAll(".project--button");
 
+let menuStatus = "closed";
+
 // Open Mobile Nav Function
 function openNav() {
   sideNav.style.width = "200px";
   mainDiv.style.marginLeft = "200px";
   mainDiv.style.opacity = ".7";
   mobileHamburger.style.visibility = "hidden";
+  setTimeout(function () {
+    menuStatus = "open";
+  }, 100);
 }
 
 // Close Mobile Nav Function
@@ -23,7 +28,15 @@ function closeNav() {
   mainDiv.style.marginLeft = "0";
   mainDiv.style.opacity = "1";
   mobileHamburger.style.visibility = "visible";
+  menuStatus = "closed";
 }
+
+// Close Mobile Nav when a user clicks outside
+mainDiv.addEventListener("click", () => {
+  if (menuStatus === "open") {
+    closeNav();
+  }
+});
 
 // Add Event Listeners to close Mobile Nav when a link is clicked.
 sideNavLink.forEach((link) => {
@@ -65,7 +78,7 @@ const createModal = (id) => {
   modalContainer.style.display = "block";
   const content = `
   <h2 class="modal--h2">${project.title}</h2>
-  <img src=${project.image} alt=${project.image_alt}>
+  <div data-aos="zoom-in" data-aos-duration="900"><img class="project--image" src=${project.image} alt=${project.image_alt}></div>
   <div class="modal__text">
     <p>${project.description}</p>
   </div>
